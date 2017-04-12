@@ -1,5 +1,73 @@
+@import url('ec.css');
+@import url('vendor.css');
+
+@font-face {
+	font-family: "Titillium Web";
+	font-style: normal;
+	font-weight: 200;
+	src: local("Titillium WebThin"), local("TitilliumWeb-Thin"), url("../asset/titilliumweb/1titilliumwebv1.woff") format("woff");
+}
+@font-face {
+	font-family: "Titillium Web";
+	font-style: normal;
+	font-weight: 300;
+	src: local("Titillium WebLight"), local("TitilliumWeb-Light"), url("../asset/titilliumweb/2titilliumwebv1.woff") format("woff");
+}
+@font-face {
+	font-family: "Titillium Web";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Titillium Web"), local("TitilliumWeb-Regular"), url("../asset/titilliumweb/3titilliumwebv1.woff") format("woff");
+}
+@font-face {
+	font-family: "Titillium Web";
+	font-style: normal;
+	font-weight: 600;
+	src: local("Titillium WebSemiBold"), local("TitilliumWeb-SemiBold"), url("../asset/titilliumweb/4titilliumwebv1.woff") format("woff");
+}
+@font-face {
+	font-family: "Titillium Web";
+	font-style: normal;
+	font-weight: 700;
+	src: local("Titillium WebBold"), local("TitilliumWeb-Bold"), url("../asset/titilliumweb/5titilliumwebv1.woff") format("woff");
+}
+@font-face {
+	font-family: "dinschriftregular";
+	font-style: normal;
+	font-weight: 600;
+	src: local("dinschriftregular"), local("dinschriftregular"), url("../asset/dinschriften/dinengschrift-webfont.eot?#iefix") format("embedded-opentype"), url("../asset/dinschriften/dinengschrift-webfont.woff") format("woff"), url("../asset/dinschriften/dinengschrift-webfont.ttf") format("truetype"), url("../asset/dinschriften/dinengschrift-webfont.svg#dinschriftregular") format("svg");
+}
+@font-face {
+	font-family: "Gotham Bold";
+	font-style: normal;
+	font-weight: 700;
+	src: local("Gotham Bold"), local("Gotham Bold"), url("../asset/gotham/Gotham-Bold.woff") format("woff");
+}
+@font-face {
+	font-family: "robotoregular";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../asset/roboto/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../asset/roboto/Roboto-Regular-webfont.woff") format("woff"), url("../asset/roboto/Roboto-Regular-webfont.ttf") format("truetype"), url("../asset/roboto/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+}
+@font-face {
+	font-family: "robotolight";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../asset/roboto/Roboto-Light.ttf") format("truetype");
+}
+
+html, body {
+	background-color: white;
+}
+
 body {
-	margin: 10px;
+	font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+	font-style: normal;
+}
+
+h1.heading, h2.heading, h3.heading, h4.heading, h5.heading, h6.heading {
+	font-family: dinschriftregular,"Arial";
+	font-style: normal;
 }
 
 .page-header {
@@ -9,4 +77,9 @@ body {
 #panel-simple {
 	margin: 20px auto;
 	max-width: 560px;
+}
+
+.nav > li > a.btn-primary:focus,
+.nav > li > a.btn-primary:hover {
+	background-color: #286090;
 }

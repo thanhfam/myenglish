@@ -109,7 +109,7 @@ $(document).ready(function() {
 				.removeClass('has-error')
 				.addClass('has-success');
 
-			term.next('span.help-block').html('');
+			term.next().next('span.help-block').html('');
 		}
 
 		if (!hasSuccess) {
@@ -136,7 +136,7 @@ $(document).ready(function() {
 				.removeClass('has-error')
 				.addClass('has-success');
 
-			term.next('span.help-block').html('');
+			term.next().next('span.help-block').html('');
 		}
 
 		if (!hasSuccess) {
@@ -163,7 +163,7 @@ $(document).ready(function() {
 				.removeClass('has-error')
 				.addClass('has-success');
 
-			term.next('span.help-block').html('');
+			term.next().next('span.help-block').html('');
 		}
 
 		if (!hasSuccess) {
@@ -312,6 +312,22 @@ $(document).ready(function() {
 
 		if (!hasSuccess) {
 			e.preventDefault();
+		}
+	});
+
+	$('div.ng-isolate-scope').on({
+		'mouseenter': function(e) {
+			$(this).children('img.step-video-preview').addClass('hide');
+			$(this).children('video').removeClass('hide');
+
+			$(this).children('video')[0].play();
+		},
+		'mouseleave': function(e) {
+			$(this).children('img.step-video-preview').removeClass('hide');
+			$(this).children('video').addClass('hide');
+
+			$(this).children('video')[0].pause();
+			$(this).children('video')[0].currentTime = 0;
 		}
 	});
 });
