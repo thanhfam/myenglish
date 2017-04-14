@@ -330,6 +330,68 @@ $(document).ready(function() {
 			$(this).children('video')[0].currentTime = 0;
 		}
 	});
+
+	// topic list
+	$('#lst-group-topic > a').on('click', function(e) {
+		if ($(this).hasClass('active')) {
+			return false;
+		}
+		else {
+			$('#lst-group-topic > a.active').removeClass('active');
+			$(this).addClass('active');
+		}
+		e.preventDefault();
+	});
+
+	// skill list
+	$('#lst-group-skill > a').on('click', function(e) {
+		if ($(this).hasClass('active')) {
+			return false;
+		}
+		else {
+			$('#lst-group-skill > a.active').removeClass('active');
+			$(this).addClass('active');
+		}
+		e.preventDefault();
+	});
+
+	// content type button group
+	$('#btn-group-content-type .btn').on('click', function(e) {
+		if ($(this).hasClass('active')) {
+			return false;
+		}
+		else {
+			$('#btn-group-content-type .btn.active').removeClass('active');
+			$(this).addClass('active');
+		}
+		e.preventDefault();
+	});
+
+	// difficulty button group
+	$('#btn-group-difficulty button').on('click', function(e) {
+		if ($(this).hasClass('active')) {
+			return false;
+		}
+		else {
+			$('#btn-group-difficulty button.active').removeClass('active');
+			$(this).addClass('active');
+		}
+		e.preventDefault();
+	});
+
+	// difficulty button group
+	$('#lst-group-view li a').on('click', function(e) {
+		alert(0);
+		return;
+		if ($(this).hasClass('active')) {
+			return false;
+		}
+		else {
+			$('#btn-group-difficulty button.active').removeClass('active');
+			$(this).addClass('active');
+		}
+		e.preventDefault();
+	});
 });
 
 function isEmail(email) {
@@ -340,4 +402,22 @@ function isEmail(email) {
 function isPassword(passwd) {
 	var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
 	return regex.test(passwd);
+}
+
+function loadVideo(params) {
+	var defauls = {
+		topic: 'all',
+		skill: 'all',
+		difficulty: 'beginner',
+		view: 'most-view'
+	};
+}
+
+function loadCourses(params) {
+	var defauls = {
+		topic: 'all',
+		skill: 'all',
+		difficulty: 'beginner',
+		view: 'most-view'
+	};
 }

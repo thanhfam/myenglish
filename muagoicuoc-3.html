@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>MyEnglish</title>
+
+	<link rel="stylesheet" href="common/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" media="screen" href="common/v1/css/main.css">
+	<link rel="icon" href="common/v1/img/favicon.png">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#user-nav" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-logo" href="/"><img src="common/v1/img/me_icon.png"></a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="user-nav">
+				<ul class="nav navbar-nav navbar-right">
+				<!-- Đã đăng nhập - BEGIN -->
+				<li class="dropdown">
+					<a id="btn-account" href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tài khoản <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a>Phạm Hải Thanh</a></li>
+						<li><a href="#">Thông tin tài khoản</a></li>
+						<li><a href="#">Đổi mật khẩu</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="muagoicuoc-1.html">Mua gói cước</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Thoát</a></li>
+					  </ul>
+				</li>
+				<!-- Đã đăng nhập - END -->
+				<!-- Chưa đăng nhập - BEGIN -->
+				<li>
+					<a id="btn-register" class="btn btn-default" href="dangky-1.html" target="_blank">Đăng ký</a>
+				</li>
+				<li>
+					<a id="btn-signin" class="btn btn-primary" href="dangnhap-1.html" target="_blank">Đăng nhập</a>
+				</li>
+				<!-- Chưa đăng nhập - END -->
+				</ul>
+			</div>
+		</div>
+		</nav>
+	</header>
+
+	<div class="container">
+	<div id="plans">
+		<div class="container">
+			<h1 class="heading">Thanh toán thành công</h1>
+
+			<div class="alert alert-success">
+				<strong>Bạn đã thanh toán thành công.</strong> Cảm ơn bạn đã lựa chọn đi cùng với MyEnglish, gói cước mới sẽ có hiệu lực ngay từ bây giờ.
+			</div>
+
+			<p>
+				<a href="index.html" class="btn btn-primary">Về trang chủ</a>
+			</p>
+		</div>
+	</div>
+	<!-- How it works - END -->
+	</div>
+
+	<footer>
+		<div class="container">
+			FOOTER
+		</div>
+	</footer>
+
+	<script src="common/jquery/jquery.min.js"></script>
+	<script src="common/bootstrap/bootstrap.min.js"></script>
+	<script src="common/v1/js/main.js"></script>
+</body>
+
+</html>

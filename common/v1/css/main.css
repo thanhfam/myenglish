@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('ec.css');
-@import url('vendor.css');
+
 
 @font-face {
 	font-family: "Titillium Web";
@@ -62,11 +63,12 @@ html, body {
 
 body {
 	font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+	font-size: 12pt;
 	font-style: normal;
 }
 
 h1.heading, h2.heading, h3.heading, h4.heading, h5.heading, h6.heading {
-	font-family: dinschriftregular,"Arial";
+	font-family: Oswald,"Arial";
 	font-style: normal;
 }
 
@@ -79,7 +81,231 @@ h1.heading, h2.heading, h3.heading, h4.heading, h5.heading, h6.heading {
 	max-width: 560px;
 }
 
+.fade.in {
+	opacity: 1;
+}
+
+.modal-backdrop.fade.in {
+	opacity: 0.5;
+}
+
+.modal-dialog {
+	display: table;
+}
+
+.navbar-collapse,
+.navbar-default {
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+
+.navbar-header {
+	border: none;
+}
+
+.navbar {
+	border-radius: 0;
+}
+
+.navbar-logo {
+	float: left;
+	margin: 5px 0;
+}
+
+.nav > li > a.btn-primary {
+	color: #eee;
+}
+
 .nav > li > a.btn-primary:focus,
 .nav > li > a.btn-primary:hover {
 	background-color: #286090;
+	color: #fff;
+}
+
+#user-nav .nav li {
+	margin: 5px;
+}
+
+.how-it-works .heading {
+	font-size: 36px;
+}
+
+.how-it-works .step .step-header {
+    font-size: 50px;
+}
+
+.how-it-works .step .caption {
+	font-size: 13pt;
+	min-height: 0;
+	margin: 10px 0;
+}
+
+#plans th,
+#plans td {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#plans thead th {
+	font-size: 1.3em;
+	font-weight: 700;
+	line-height: 1em;
+	margin-bottom: 0;
+	padding: 9px 5px;
+	text-align: center;
+}
+
+#plans .ec-player-icon.watch {
+	background-position: -35px -365px;
+}
+
+#plans .ec-player-icon.speak {
+	background-position: -321px -365px;
+}
+
+#plans .ec-player-icon.learn {
+	background-position: -178px -365px;
+}
+
+#plans .ec-player-icon.golive {
+	background-position: -464px -365px;
+}
+
+#plans .ec-player-icon {
+	background-image: url(../img/activity-control-sprite.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 65px;
+	width: 70px;
+	vertical-align: middle;
+}
+
+#plans td strong {
+	font-weight: 700;
+	line-height: 15px;
+	padding: 5px;
+}
+
+#plans tbody th,
+#plans tbody td:first-child {
+	text-align: left;
+}
+
+#plans td:first-child .product-helper {
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	padding-left: 5px;
+}
+
+#plans td:first-child .product-helper-container .product-title {
+	color: #000;
+	display: inline-block;
+	font-size: 1.5em;
+	font-weight: 600;
+	margin-bottom: 5px;
+	padding-bottom: 0;
+	vertical-align: middle;
+}
+
+
+#faq blockquote {
+	margin: 10px 0;
+	font-size: 12pt;
+}
+
+#news .media small {
+	color: #777;
+}
+
+#news .media .media-left .thumbnail img {
+	max-width: 180px;
+}
+
+#btn-group-content-type.btn-group {
+}
+
+#courses .tab-content {
+	margin-top: 56.4px;
+}
+
+#video-list .video-avatar {
+	margin-bottom: 5px;
+	display: block;
+	width: 188px;
+	height: 98px;
+	padding: 4px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	-webkit-transition: border .2s ease-in-out;
+	-o-transition: border .2s ease-in-out;
+	transition: border .2s ease-in-out;
+	padding: 4px;
+}
+
+#video-list .video-avatar:hover .play-button {
+	visibility: visible;
+}
+
+#video-list .video-image {
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 180px 90px;
+	position: relative;
+}
+
+#video-list .duration {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	background: #666;
+	color: #eee;
+	font-size: .75em;
+	line-height: .75em;
+	padding: 3px;
+	border-radius: 3px;
+}
+
+#video-list .video-details .level span {
+	vertical-align: middle;
+}
+
+#video-list .video {
+	margin-bottom: 20px;
+	height: 150px;
+}
+
+#video-list .video-title {
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 22.6px;
+}
+
+#video-list .video-details {
+	margin: 0;
+}
+
+#video-list .play-button {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAnFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBgYMDAwREREXFxccHBwiIiIsLCw1NTU/Pz9NTU1ZWVllZWVwcHB+fn6FhYWLi4uXl5ejo6OxsbG2tra6urq/v7/ExMTNzc3V1dXh4eHm5ubs7Ozv7+/y8vL29vb5+fn6+vr8/Pz9/f3///8PYru4AAAAM3RSTlMAAyMkMDIzWVpcbm9xfX6AgYOEhoeJjI+SlpufpKqtsLa8w8bJzM/V2+Tp7fDz9vn7/P6SVZHeAAAA7UlEQVRIx7XW2VLCQBCF4TMMgZCEjIiiuCFugAsu5/3fjQv1Ri3Jn6qcy1R9FzPp6W5JUugPi7Q3xbAf9JVYpoYp46fI6tQ4dSZJPSBSqntSKBNKETRIMAPllIxUUVJpTMlYv79Njv83f5Cjp1NMvD3HxO8LTOzbA0y8nmLixxNM/HKGid8uMbGXnHh1iIk3M0z8PMfErxeY+OMaE/t+gskDJsvuj88vmf9KXjA3uPivun9i/CHzdnFHm9LP4u2iwfI2vndYtBhJLQbfiI/XFkOcrgplkCJbSGK7tUeKjW+tit8LWcjyBqrKsyBJO3XAtmsmt1NVAAAAAElFTkSuQmCC');
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+}
+
+.list-group-item {
+	padding: 7px 10px;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+	background-image: none;
 }
