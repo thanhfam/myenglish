@@ -16,48 +16,56 @@
 <body>
 	<header>
 		<nav class="navbar navbar-default">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#user-nav" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-logo" href="/"><img src="common/v1/img/me_icon.png"></a>
-			</div>
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#user-nav" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-logo" href="/"><img src="common/v1/img/me_icon.png"></a>
+				</div>
 
-			<div class="collapse navbar-collapse" id="user-nav">
-				<ul class="nav navbar-nav navbar-right">
-				<!-- Đã đăng nhập - BEGIN -->
-				<li class="dropdown">
-					<a id="btn-account" href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tài khoản <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a><strong>Phạm Hải Thanh</strong></a></li>
-						<li><a href="#">Thông tin tài khoản</a></li>
-						<li><a href="#">Đổi mật khẩu</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="muagoicuoc-1.html">Mua gói cước</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="#">Thoát</a></li>
-					  </ul>
-				</li>
-				<!-- Đã đăng nhập - END -->
-				<!-- Chưa đăng nhập - BEGIN -->
-				<li>
-					<a id="btn-register" class="btn btn-default" href="dangky-1.html" target="_blank">Đăng ký</a>
-				</li>
-				<li>
-					<a id="btn-signin" class="btn btn-primary" href="dangnhap-1.html" target="_blank">Đăng nhập</a>
-				</li>
-				<!-- Chưa đăng nhập - END -->
-				</ul>
+				<div class="collapse navbar-collapse" id="user-nav">
+					<ul class="nav navbar-nav navbar-right">
+					<!-- Đã đăng nhập - BEGIN -->
+					<li class="dropdown">
+						<a id="btn-account" href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tài khoản <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a><strong>Phạm Hải Thanh</strong></a></li>
+							<li><a href="#">Thông tin tài khoản</a></li>
+							<li><a href="#">Đổi mật khẩu</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="muagoicuoc-1.html">Mua gói cước</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Thoát</a></li>
+						  </ul>
+					</li>
+					<!-- Đã đăng nhập - END -->
+					<!-- Chưa đăng nhập - BEGIN -->
+					<li>
+						<a id="btn-register" class="btn btn-default" href="dangky-1.html" target="_blank">Đăng ký</a>
+					</li>
+					<li>
+						<a id="btn-signin" class="btn btn-primary" href="dangnhap-1.html" target="_blank">Đăng nhập</a>
+					</li>
+					<!-- Chưa đăng nhập - END -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div id="landing-cover" class="row-fluid landing-container">
+			<div class="container">
+				<div class="row text-center">
+					<h1 class="heading">Học tiếng Anh qua video</h1>
+					<h2><small class="sub-heading">Hàng ngàn video với hàng trăm chủ đề, thoả mãn mọi trình độ của bạn.</small></h2>
+				</div>
 			</div>
 		</div>
-		</nav>
 	</header>
 
-	<div class="container">
 
 	<div id="courses">
 		<div class="container">
@@ -72,7 +80,7 @@
 					</div>
 				</div>
 
-				<h3>Chủ đề</h3>
+				<h3 class="heading">Chủ đề</h3>
 				<div id="lst-group-topic" class="list-group">
 					<a href="#" class="list-group-item active">Tất cả</a>
 					<a href="#" class="list-group-item">Kinh doanh</a>
@@ -81,7 +89,7 @@
 					<a href="#" class="list-group-item">Du lịch</a>
 				</div>
 
-				<h3>Kỹ năng</h3>
+				<h3 class="heading">Kỹ năng</h3>
 				<div id="lst-group-skill" class="list-group">
 					<a href="#" class="list-group-item active">Tất cả</a>
 					<a href="#" class="list-group-item">Ngữ pháp</a>
@@ -94,14 +102,14 @@
 
 			<div class="col-sm-9">
 				<div class="clearfix">
-					<div id="btn-group-difficulty" class="btn-group btn-group-difficulty pull-left">
+					<div id="btn-group-difficulty" class="btn-group btn-group-difficulty pull-left hidden-sm hidden-xs">
 						<button type="button" class="btn btn-default active">Tất cả</button>
 						<button type="button" class="btn btn-default"><span class="pull-left ec-difficulty beginner"></span>Beginner</button>
 						<button type="button" class="btn btn-default"><span class="pull-left ec-difficulty intermediate"></span>Intermediate</button>
 						<button type="button" class="btn btn-default"><span class="pull-left ec-difficulty advanced"></span>Advanced</button>
 					</div>
 
-					<div class="dropdown pull-left visible-sm hide">
+					<div class="dropdown pull-left visible-sm visible-xs">
 						<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Tất cả <span class="caret"></span>
 						</button>
 
@@ -113,7 +121,7 @@
 						</ul>
 					</div>
 
-					<div class="dropdown pull-right hide">
+					<div class="dropdown pull-right">
 						<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Xem nhiều nhất <span class="caret"></span>
 						</button>
 						<ul id="#lst-group-view" class="dropdown-menu">
@@ -127,134 +135,128 @@
 				<div class="tab-content">
 					<!-- tab course list - BEGIN -->
 					<div role="tabpanel" class="tab-pane" id="tab-course-list">
-					course
-					</div>
-					<!-- tab course list - END -->
-
-					<!-- tab video list - BEGIN -->
-					<div role="tabpanel" class="tab-pane active" id="tab-video-list">
-						<div id="video-list" class="video-list carousel slide" data-ride="carousel">
+						<div id="course-list" class="video-list carousel slide" data-ride="carousel" data-interval="false">
 							<!-- Controls -->
-							<nav>
-								<ul class="pager">
-									<li><a class="" href="#video-list" role="button" data-slide="prev"><span class=" glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a></li>
-									<li><a class="" href="#video-list" role="button" data-slide="next"><span class=" glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></li>
-								</ul>
-							</nav>
+							<div class="carousel-controls clearfix">
+								<h3 class="heading pull-left">Chọn video phù hợp với kỹ năng và trình độ của bạn</h2>
+								<a class="pull-right" href="#course-list" role="button" data-slide="next"><span class=" glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+								<a class="pull-right" href="#course-list" role="button" data-slide="prev"><span class=" glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+							</div>
+
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
 									<div class="video col-md-4 col-sm-6 col-xs-12">
-										<a href="" class="video-avatar">
+										<a href="#" class="video-avatar view-video">
 											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28770/thumb_28770_20170411092051.jpg);">
 												<span class="play-button"></span>
 												<span class="duration">00:37</span>
 											</div>
 										</a>
-										<a href="" class="video-title">Not What I Ordered Not What I Ordered</a>
+										<a href="#" class="video-title view-video">Not What I Ordered Not What I Ordered</a>
 										<p class="video-details">
 											<small class="level pull-left"><span class="ec-difficulty beginner"></span>Level 1</small>
 											<small class="views pull-right">159 lượt xem</small>
 										</p>
 									</div>
 									<div class="video col-md-4 col-sm-6 col-xs-12">
-										<a href="" class="video-avatar">
+										<a href="" class="video-avatar view-video">
 											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28769/thumb_28769_20170406073045.jpg);">
 												<span class="play-button"></span>
 												<span class="duration">00:37</span>
 											</div>
 										</a>
-										<a href="" class="video-title">Ordering: Not What I Ordered</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
 										<p class="video-details">
 											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
 											<small class="views pull-right">159 lượt xem</small>
 										</p>
 									</div>
 									<div class="video col-md-4 col-sm-6 col-xs-12">
-										<a href="" class="video-avatar">
+										<a href="" class="video-avatar view-video">
 											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28766/thumb_28766_20170406065238.jpg);">
 												<span class="play-button"></span>
 												<span class="duration">00:37</span>
 											</div>
 										</a>
-										<a href="" class="video-title">Ordering: Not What I Ordered</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
 										<p class="video-details">
 											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
 											<small class="views pull-right">159 lượt xem</small>
 										</p>
 									</div>
 									<div class="video col-md-4 col-sm-6 col-xs-12">
-										<a href="" class="video-avatar">
+										<a href="" class="video-avatar view-video">
 											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28769/thumb_28769_20170406073045.jpg);">
 												<span class="play-button"></span>
 												<span class="duration">00:37</span>
 											</div>
 										</a>
-										<a href="" class="video-title">Ordering: Not What I Ordered</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
 										<p class="video-details">
 											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
 											<small class="views pull-right">159 lượt xem</small>
 										</p>
 									</div>
 									<div class="video col-md-4 col-sm-6 col-xs-12">
-										<a href="" class="video-avatar">
+										<a href="" class="video-avatar view-video">
 											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28770/thumb_28770_20170411092051.jpg);">
 												<span class="play-button"></span>
 												<span class="duration">00:37</span>
 											</div>
 										</a>
-										<a href="" class="video-title">Ordering: Not What I Ordered</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
 										<p class="video-details">
 											<small class="level pull-left"><span class="ec-difficulty beginner"></span>Level 1</small>
 											<small class="views pull-right">159 lượt xem</small>
 										</p>
 									</div>
 									<div class="video col-md-4 col-sm-6 col-xs-12">
-										<a href="" class="video-avatar">
+										<a href="" class="video-avatar view-video">
 											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28770/thumb_28770_20170411092051.jpg);">
 												<span class="play-button"></span>
 												<span class="duration">00:37</span>
 											</div>
 										</a>
-										<a href="" class="video-title">Ordering: Not What I Ordered</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
 										<p class="video-details">
 											<small class="level pull-left"><span class="ec-difficulty beginner"></span>Level 1</small>
 											<small class="views pull-right">159 lượt xem</small>
 										</p>
 									</div>
 									<div class="video col-md-4 col-sm-6 col-xs-12">
-										<a href="" class="video-avatar">
+										<a href="" class="video-avatar view-video">
 											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28766/thumb_28766_20170406065238.jpg);">
 												<span class="play-button"></span>
 												<span class="duration">00:37</span>
 											</div>
 										</a>
-										<a href="" class="video-title">Ordering: Not What I Ordered</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
 										<p class="video-details">
 											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
 											<small class="views pull-right">159 lượt xem</small>
 										</p>
 									</div>
 									<div class="video col-md-4 col-sm-6 col-xs-12">
-										<a href="" class="video-avatar">
+										<a href="" class="video-avatar view-video">
 											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28769/thumb_28769_20170406073045.jpg);">
 												<span class="play-button"></span>
 												<span class="duration">00:37</span>
 											</div>
 										</a>
-										<a href="" class="video-title">Ordering: Not What I Ordered</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
 										<p class="video-details">
 											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
 											<small class="views pull-right">159 lượt xem</small>
 										</p>
 									</div>
 									<div class="video col-md-4 col-sm-6 col-xs-12">
-										<a href="" class="video-avatar">
+										<a href="" class="video-avatar view-video">
 											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28770/thumb_28770_20170411092051.jpg);">
 												<span class="play-button"></span>
 												<span class="duration">00:37</span>
 											</div>
 										</a>
-										<a href="" class="video-title">Ordering: Not What I Ordered</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
 										<p class="video-details">
 											<small class="level pull-left"><span class="ec-difficulty beginner"></span>Level 1</small>
 											<small class="views pull-right">159 lượt xem</small>
@@ -263,117 +265,371 @@
 								</div>
 								<div class="item">
 									<div class="video col-md-4 col-sm-6 col-xs-12">
-										<a href="" class="video-avatar">
+										<a href="" class="video-avatar view-video">
 											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28770/thumb_28770_20170411092051.jpg);">
 												<span class="play-button"></span>
 												<span class="duration">00:37</span>
 											</div>
 										</a>
-										<a href="" class="video-title">What I Ordered</a>
+										<a href="" class="video-title view-video">What I Ordered</a>
 										<p class="video-details">
 											<small class="level pull-left"><span class="ec-difficulty beginner"></span>Level 1</small>
 											<small class="views pull-right">159 lượt xem</small>
 										</p>
 									</div>
 									<div class="video col-md-4 col-sm-6 col-xs-12">
-										<a href="" class="video-avatar">
+										<a href="" class="video-avatar view-video">
 											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28769/thumb_28769_20170406073045.jpg);">
 												<span class="play-button"></span>
 												<span class="duration">00:37</span>
 											</div>
 										</a>
-										<a href="" class="video-title">Ordering: Not What I Ordered</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
 										<p class="video-details">
 											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
 											<small class="views pull-right">159 lượt xem</small>
 										</p>
 									</div>
 									<div class="video col-md-4 col-sm-6 col-xs-12">
-										<a href="" class="video-avatar">
+										<a href="" class="video-avatar view-video">
 											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28766/thumb_28766_20170406065238.jpg);">
 												<span class="play-button"></span>
 												<span class="duration">00:37</span>
 											</div>
 										</a>
-										<a href="" class="video-title">Ordering: Not What I Ordered</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
 										<p class="video-details">
 											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
 											<small class="views pull-right">159 lượt xem</small>
 										</p>
 									</div>
 									<div class="video col-md-4 col-sm-6 col-xs-12">
-										<a href="" class="video-avatar">
+										<a href="" class="video-avatar view-video">
 											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28769/thumb_28769_20170406073045.jpg);">
 												<span class="play-button"></span>
 												<span class="duration">00:37</span>
 											</div>
 										</a>
-										<a href="" class="video-title">Ordering: Not What I Ordered</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
 										<p class="video-details">
 											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
 											<small class="views pull-right">159 lượt xem</small>
 										</p>
 									</div>
 									<div class="video col-md-4 col-sm-6 col-xs-12">
-										<a href="" class="video-avatar">
+										<a href="" class="video-avatar view-video">
 											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28770/thumb_28770_20170411092051.jpg);">
 												<span class="play-button"></span>
 												<span class="duration">00:37</span>
 											</div>
 										</a>
-										<a href="" class="video-title">Ordering: Not What I Ordered</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
 										<p class="video-details">
 											<small class="level pull-left"><span class="ec-difficulty beginner"></span>Level 1</small>
 											<small class="views pull-right">159 lượt xem</small>
 										</p>
 									</div>
 									<div class="video col-md-4 col-sm-6 col-xs-12">
-										<a href="" class="video-avatar">
+										<a href="" class="video-avatar view-video">
 											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28770/thumb_28770_20170411092051.jpg);">
 												<span class="play-button"></span>
 												<span class="duration">00:37</span>
 											</div>
 										</a>
-										<a href="" class="video-title">Ordering: Not What I Ordered</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
 										<p class="video-details">
 											<small class="level pull-left"><span class="ec-difficulty beginner"></span>Level 1</small>
 											<small class="views pull-right">159 lượt xem</small>
 										</p>
 									</div>
 									<div class="video col-md-4 col-sm-6 col-xs-12">
-										<a href="" class="video-avatar">
+										<a href="" class="video-avatar view-video">
 											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28766/thumb_28766_20170406065238.jpg);">
 												<span class="play-button"></span>
 												<span class="duration">00:37</span>
 											</div>
 										</a>
-										<a href="" class="video-title">Ordering: Not What I Ordered</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
 										<p class="video-details">
 											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
 											<small class="views pull-right">159 lượt xem</small>
 										</p>
 									</div>
 									<div class="video col-md-4 col-sm-6 col-xs-12">
-										<a href="" class="video-avatar">
+										<a href="" class="video-avatar view-video">
 											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28769/thumb_28769_20170406073045.jpg);">
 												<span class="play-button"></span>
 												<span class="duration">00:37</span>
 											</div>
 										</a>
-										<a href="" class="video-title">Ordering: Not What I Ordered</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
 										<p class="video-details">
 											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
 											<small class="views pull-right">159 lượt xem</small>
 										</p>
 									</div>
 									<div class="video col-md-4 col-sm-6 col-xs-12">
-										<a href="" class="video-avatar">
+										<a href="" class="video-avatar view-video">
 											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28770/thumb_28770_20170411092051.jpg);">
 												<span class="play-button"></span>
 												<span class="duration">00:37</span>
 											</div>
 										</a>
-										<a href="" class="video-title">Ordering: Not What I Ordered</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
+										<p class="video-details">
+											<small class="level pull-left"><span class="ec-difficulty beginner"></span>Level 1</small>
+											<small class="views pull-right">159 lượt xem</small>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- tab course list - END -->
+
+					<!-- tab video list - BEGIN -->
+					<div role="tabpanel" class="tab-pane active" id="tab-video-list">
+						<div id="video-list" class="video-list carousel slide" data-ride="carousel" data-interval="false">
+							<!-- Controls -->
+							<div class="carousel-controls clearfix">
+								<h3 class="heading pull-left">Chọn video phù hợp với kỹ năng và trình độ của bạn</h2>
+								<a class="pull-right" href="#video-list" role="button" data-slide="next"><span class=" glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+								<a class="pull-right" href="#video-list" role="button" data-slide="prev"><span class=" glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+							</div>
+
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<div class="video col-md-4 col-sm-6 col-xs-12">
+										<a href="#" class="video-avatar view-video">
+											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28770/thumb_28770_20170411092051.jpg);">
+												<span class="play-button"></span>
+												<span class="duration">00:37</span>
+											</div>
+										</a>
+										<a href="#" class="video-title view-video">Not What I Ordered Not What I Ordered</a>
+										<p class="video-details">
+											<small class="level pull-left"><span class="ec-difficulty beginner"></span>Level 1</small>
+											<small class="views pull-right">159 lượt xem</small>
+										</p>
+									</div>
+									<div class="video col-md-4 col-sm-6 col-xs-12">
+										<a href="" class="video-avatar view-video">
+											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28769/thumb_28769_20170406073045.jpg);">
+												<span class="play-button"></span>
+												<span class="duration">00:37</span>
+											</div>
+										</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
+										<p class="video-details">
+											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
+											<small class="views pull-right">159 lượt xem</small>
+										</p>
+									</div>
+									<div class="video col-md-4 col-sm-6 col-xs-12">
+										<a href="" class="video-avatar view-video">
+											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28766/thumb_28766_20170406065238.jpg);">
+												<span class="play-button"></span>
+												<span class="duration">00:37</span>
+											</div>
+										</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
+										<p class="video-details">
+											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
+											<small class="views pull-right">159 lượt xem</small>
+										</p>
+									</div>
+									<div class="video col-md-4 col-sm-6 col-xs-12">
+										<a href="" class="video-avatar view-video">
+											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28769/thumb_28769_20170406073045.jpg);">
+												<span class="play-button"></span>
+												<span class="duration">00:37</span>
+											</div>
+										</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
+										<p class="video-details">
+											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
+											<small class="views pull-right">159 lượt xem</small>
+										</p>
+									</div>
+									<div class="video col-md-4 col-sm-6 col-xs-12">
+										<a href="" class="video-avatar view-video">
+											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28770/thumb_28770_20170411092051.jpg);">
+												<span class="play-button"></span>
+												<span class="duration">00:37</span>
+											</div>
+										</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
+										<p class="video-details">
+											<small class="level pull-left"><span class="ec-difficulty beginner"></span>Level 1</small>
+											<small class="views pull-right">159 lượt xem</small>
+										</p>
+									</div>
+									<div class="video col-md-4 col-sm-6 col-xs-12">
+										<a href="" class="video-avatar view-video">
+											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28770/thumb_28770_20170411092051.jpg);">
+												<span class="play-button"></span>
+												<span class="duration">00:37</span>
+											</div>
+										</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
+										<p class="video-details">
+											<small class="level pull-left"><span class="ec-difficulty beginner"></span>Level 1</small>
+											<small class="views pull-right">159 lượt xem</small>
+										</p>
+									</div>
+									<div class="video col-md-4 col-sm-6 col-xs-12">
+										<a href="" class="video-avatar view-video">
+											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28766/thumb_28766_20170406065238.jpg);">
+												<span class="play-button"></span>
+												<span class="duration">00:37</span>
+											</div>
+										</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
+										<p class="video-details">
+											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
+											<small class="views pull-right">159 lượt xem</small>
+										</p>
+									</div>
+									<div class="video col-md-4 col-sm-6 col-xs-12">
+										<a href="" class="video-avatar view-video">
+											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28769/thumb_28769_20170406073045.jpg);">
+												<span class="play-button"></span>
+												<span class="duration">00:37</span>
+											</div>
+										</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
+										<p class="video-details">
+											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
+											<small class="views pull-right">159 lượt xem</small>
+										</p>
+									</div>
+									<div class="video col-md-4 col-sm-6 col-xs-12">
+										<a href="" class="video-avatar view-video">
+											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28770/thumb_28770_20170411092051.jpg);">
+												<span class="play-button"></span>
+												<span class="duration">00:37</span>
+											</div>
+										</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
+										<p class="video-details">
+											<small class="level pull-left"><span class="ec-difficulty beginner"></span>Level 1</small>
+											<small class="views pull-right">159 lượt xem</small>
+										</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="video col-md-4 col-sm-6 col-xs-12">
+										<a href="" class="video-avatar view-video">
+											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28770/thumb_28770_20170411092051.jpg);">
+												<span class="play-button"></span>
+												<span class="duration">00:37</span>
+											</div>
+										</a>
+										<a href="" class="video-title view-video">What I Ordered</a>
+										<p class="video-details">
+											<small class="level pull-left"><span class="ec-difficulty beginner"></span>Level 1</small>
+											<small class="views pull-right">159 lượt xem</small>
+										</p>
+									</div>
+									<div class="video col-md-4 col-sm-6 col-xs-12">
+										<a href="" class="video-avatar view-video">
+											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28769/thumb_28769_20170406073045.jpg);">
+												<span class="play-button"></span>
+												<span class="duration">00:37</span>
+											</div>
+										</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
+										<p class="video-details">
+											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
+											<small class="views pull-right">159 lượt xem</small>
+										</p>
+									</div>
+									<div class="video col-md-4 col-sm-6 col-xs-12">
+										<a href="" class="video-avatar view-video">
+											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28766/thumb_28766_20170406065238.jpg);">
+												<span class="play-button"></span>
+												<span class="duration">00:37</span>
+											</div>
+										</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
+										<p class="video-details">
+											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
+											<small class="views pull-right">159 lượt xem</small>
+										</p>
+									</div>
+									<div class="video col-md-4 col-sm-6 col-xs-12">
+										<a href="" class="video-avatar view-video">
+											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28769/thumb_28769_20170406073045.jpg);">
+												<span class="play-button"></span>
+												<span class="duration">00:37</span>
+											</div>
+										</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
+										<p class="video-details">
+											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
+											<small class="views pull-right">159 lượt xem</small>
+										</p>
+									</div>
+									<div class="video col-md-4 col-sm-6 col-xs-12">
+										<a href="" class="video-avatar view-video">
+											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28770/thumb_28770_20170411092051.jpg);">
+												<span class="play-button"></span>
+												<span class="duration">00:37</span>
+											</div>
+										</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
+										<p class="video-details">
+											<small class="level pull-left"><span class="ec-difficulty beginner"></span>Level 1</small>
+											<small class="views pull-right">159 lượt xem</small>
+										</p>
+									</div>
+									<div class="video col-md-4 col-sm-6 col-xs-12">
+										<a href="" class="video-avatar view-video">
+											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28770/thumb_28770_20170411092051.jpg);">
+												<span class="play-button"></span>
+												<span class="duration">00:37</span>
+											</div>
+										</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
+										<p class="video-details">
+											<small class="level pull-left"><span class="ec-difficulty beginner"></span>Level 1</small>
+											<small class="views pull-right">159 lượt xem</small>
+										</p>
+									</div>
+									<div class="video col-md-4 col-sm-6 col-xs-12">
+										<a href="" class="video-avatar view-video">
+											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28766/thumb_28766_20170406065238.jpg);">
+												<span class="play-button"></span>
+												<span class="duration">00:37</span>
+											</div>
+										</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
+										<p class="video-details">
+											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
+											<small class="views pull-right">159 lượt xem</small>
+										</p>
+									</div>
+									<div class="video col-md-4 col-sm-6 col-xs-12">
+										<a href="" class="video-avatar view-video">
+											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28769/thumb_28769_20170406073045.jpg);">
+												<span class="play-button"></span>
+												<span class="duration">00:37</span>
+											</div>
+										</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
+										<p class="video-details">
+											<small class="level"><span class="ec-difficulty beginner"></span>Level 1</small>
+											<small class="views pull-right">159 lượt xem</small>
+										</p>
+									</div>
+									<div class="video col-md-4 col-sm-6 col-xs-12">
+										<a href="" class="video-avatar view-video">
+											<div class="video-image" style="background-image: url(https://cdna.englishcentral.com/dialogs/28770/thumb_28770_20170411092051.jpg);">
+												<span class="play-button"></span>
+												<span class="duration">00:37</span>
+											</div>
+										</a>
+										<a href="" class="video-title view-video">Ordering: Not What I Ordered</a>
 										<p class="video-details">
 											<small class="level pull-left"><span class="ec-difficulty beginner"></span>Level 1</small>
 											<small class="views pull-right">159 lượt xem</small>
@@ -388,6 +644,62 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Guarantee - BEGIN -->
+	<div class="guarantee-section row-fluid">
+		<div class="container">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 class="row heading headline">
+                            Our 100% Commit Guarantee                        </h1>
+                        <div class="row col-md-12 row-guarantee">
+                            <h2 class="row headline">
+                                Follow these 4 steps with our Platinum plan and we guarantee that you will level up in 3 months, <br><span class="small-headline">or we give you 100% of your money back.<br><span class="small-headline">                            </span></span></h2>
+                            <div class="col-md-offset-1">
+                                <a href="/help?forum=22968018&amp;article=39478478" target="_blank">
+                                    <img class="pull-left img-responsive guarantee-badge" src="common/v1/img/platinum.png" width="180" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-8 description">
+                <div class="graph">
+                    <img src="common/v1/img/graph.png" alt="">
+                </div>
+                <div class="row">
+                    <h3 class="heading">ADVANCED</h3>
+                    <h4 class="small-heading">Become An Expert</h4>
+                    <ul class="list-unstyled">
+                        <li>- Learn idioms and slang</li>
+                        <li>- Master Academic Vocabulary</li>
+                        <li>- Improve and reduce your accent</li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <h3 class="heading heading-small">INTERMEDIATE</h3>
+                    <h4 class="small-heading">Get Fluent</h4>
+                    <ul class="list-unstyled">
+                        <li>- English for study or work</li>
+                        <li>- Expand your vocabulary</li>
+                        <li>- Speak English when you travel</li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <h3 class="heading heading-small">BEGINNER</h3>
+                    <h4 class="small-heading">Learn The Basics</h4>
+                    <ul class="list-unstyled">
+                        <li>- Meet &amp; greet people</li>
+                        <li>- Master basic words &amp; phrases</li>
+                        <li>- Talk about yourself &amp; life</li>
+                    </ul>
+                </div>
+            </div>
+		</div>
+	</div>
+	<!-- Guarantee - END -->
 
 	<!-- How it works - BEGIN -->
 	<div class="how-it-works">
@@ -460,13 +772,60 @@
 		</div>
 	</div>
 	<!-- How it works - END -->
-	</div>
 
-	<footer>
+	<footer class="row-fluid">
 		<div class="container">
-			FOOTER
+		<div class="clearfix">
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="index.html">Trang chủ</a></li>
+				<li><a href="news.html">Tin tức</a></li>
+				<li><a href="muagoicuoc-1.html">Gói cước</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="contact.html">Liên hệ</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><p class="navbar-text">Bản quyền thuộc về Tổng công ty Truyền thông (VNPT-Media)</p></li>
+			</ul>
+		</div>
+		<div class="clearfix">
+			<div class="pull-left">
+					<div class="copyright-content">
+					<p><strong>Dịch vụ học tiếng Anh trực tuyến MyEnglish</strong></p>
+					<p>Địa chỉ: 57A Huỳnh Thúc Kháng, Láng Hạ, Đống Đa, Hà Nội.</p>
+					<p>Hotline: 0888.91.56.96. Email: <a href="mailto:myenglish@vnpt.vn">myenglish@vnpt.vn</a></p>
+					<p>Dịch vụ cung cấp thử nghiệm.</p>
+				</div>
+			</div>
+
+			<div class="copyright pull-right">
+				<p>
+					<a href="http://vnptmedia.vn" target="_blank" title="Dịch vụ MyEnglish"><span class="logo logo-me"></span></a>
+					<a href="http://vnptmedia.vn" target="_blank" title="Dịch vụ MyHomework"><span class="logo logo-mh"></span></a>
+				</p>
+				<p>
+					<a href="http://vnptmedia.vn" target="_blank" title="Tập đoàn VNPT"><span class="logo logo-vnptmedia"></span></a>
+					<a href="http://vnptmedia.vn" target="_blank" title="Tổng công ty Truyền thông"><span class="logo logo-vnpt"></span></a>
+				</p>
+			</div>
+		</div>
 		</div>
 	</footer>
+
+	<!-- Modal - BEGIN -->
+	<div class="modal fade" id="modal-video" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">GoLive!</h4>
+				</div>
+				<div class="modal-body">
+					<video controls x-webkit-airplay="allow" webkit-playsinline="" src="https://cdna.englishcentral.com/promo/demo/golive/golive-vi-20160413093615.mp4" style="width: 640px; height: 360px;"></video>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal - END -->
 
 	<script src="common/jquery/jquery.min.js"></script>
 	<script src="common/bootstrap/bootstrap.min.js"></script>

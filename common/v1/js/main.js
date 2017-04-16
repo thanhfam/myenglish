@@ -392,6 +392,12 @@ $(document).ready(function() {
 		}
 		e.preventDefault();
 	});
+
+	$('#video-list .view-video').on('click', function(e) {
+		$('#modal-video').modal();
+
+		e.preventDefault();
+	});
 });
 
 function isEmail(email) {
