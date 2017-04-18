@@ -389,3 +389,7 @@ footer {
 .guarantee-section .description .small-heading {
 	color: #09f;
 }
+
+.birthday .form-control {
+	width: 30%;
+}

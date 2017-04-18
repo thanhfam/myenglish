@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>MyEnglish</title>
+
+	<link rel="stylesheet" href="common/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" media="screen" href="common/v1/css/main.css">
+	<link rel="icon" href="common/v1/img/favicon.png">
+
+	<script src="https://www.englishcentral.com/partnersdk/sdk.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#user-nav" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-logo" href="/"><img src="common/v1/img/me_icon.png"></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="user-nav">
+					<ul class="nav navbar-nav navbar-right">
+					<!-- Đã đăng nhập - BEGIN -->
+					<li class="dropdown">
+						<a id="btn-account" href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tài khoản <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a><strong>Phạm Hải Thanh</strong></a></li>
+							<li><a href="#">Thông tin tài khoản</a></li>
+							<li><a href="#">Đổi mật khẩu</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="muagoicuoc-1.html">Mua gói cước</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Thoát</a></li>
+						  </ul>
+					</li>
+					<!-- Đã đăng nhập - END -->
+					<!-- Chưa đăng nhập - BEGIN -->
+					<li>
+						<a id="btn-register" class="btn btn-default" href="dangky-1.html" target="_blank">Đăng ký</a>
+					</li>
+					<li>
+						<a id="btn-signin" class="btn btn-primary" href="dangnhap-1.html" target="_blank">Đăng nhập</a>
+					</li>
+					<!-- Chưa đăng nhập - END -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div id="landing-cover" class="row-fluid landing-container">
+			<div class="container">
+				<div class="row text-center">
+					<h1 class="heading">Học tiếng Anh qua video</h1>
+					<h2><small class="sub-heading">Hàng ngàn video với hàng trăm chủ đề, thoả mãn mọi trình độ của bạn.</small></h2>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<div id="account">
+		<div class="container">
+
+			<div class="col-sm-3">
+				<div id="account-info">
+					<h2 class="heading">haithanh@vnpt.vn</h2>
+					<p class="acc acc-lv0">Miễn phí</p>
+					<p class="acc acc-lv1 hide">Premium</p>
+					<p class="acc acc-lv2 hide">Platinium</p>
+				</div>
+
+				<div id="lst-account-menu" class="list-group">
+					<a href="taikhoan-1.html" class="list-group-item">Thông tin tài khoản</a>
+					<a href="taikhoan-2.html" class="list-group-item active">Đổi mật khẩu</a>
+					<a href="taikhoan-3.html" class="list-group-item">Gói cước</a>
+					<a href="taikhoan-4.html" class="list-group-item">Lịch sử giao dịch</a>
+					<a href="#" class="list-group-item">Thoát</a>
+				</div>
+			</div>
+
+			<div class="col-sm-9">
+				<h3 class="heading">Lịch sử giao dịch</h2>
+
+				<table id="transaction" class="table table-striped table-responsive table-hover">
+				<thead>
+					<tr>
+						<th>Thời điểm</th>
+						<th>Loại giao dịch</th>
+						<th>Nội dung</th>
+						<th>Giá trị</th>
+						<th>Trạng thái</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>11:18 17/04/2017</td>
+						<td>Thanh toán</td>
+						<td>Gói cước Premium, 3 tháng</td>
+						<td><span class="text-danger">-20.000đ</span></td>
+						<td><span class="text-success">Thành công</span></td>
+					</tr>
+					<tr>
+						<td>11:18 17/04/2017</td>
+						<td>Huỷ thanh toán</td>
+						<td>Gói cước Premium</td>
+						<td>-</td>
+						<td><span class="text-danger">Từ chối</span></td>
+					</tr>
+					<tr>
+						<td>11:18 17/04/2017</td>
+						<td>Huỷ thanh toán</td>
+						<td>Gói cước Premium</td>
+						<td><span class="text-success">+54.750đ</span></td>
+						<td><span class="text-success">Thành công</span></td>
+					</tr>
+				</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<footer class="row-fluid">
+		<div class="container">
+		<div class="clearfix">
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="index.html">Trang chủ</a></li>
+				<li><a href="news.html">Tin tức</a></li>
+				<li><a href="muagoicuoc-1.html">Gói cước</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="contact.html">Liên hệ</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><p class="navbar-text">Bản quyền thuộc về Tổng công ty Truyền thông (VNPT-Media)</p></li>
+			</ul>
+		</div>
+		<div class="clearfix">
+			<div class="pull-left">
+					<div class="copyright-content">
+					<p><strong>Dịch vụ học tiếng Anh trực tuyến MyEnglish</strong></p>
+					<p>Địa chỉ: 57A Huỳnh Thúc Kháng, Láng Hạ, Đống Đa, Hà Nội.</p>
+					<p>Hotline: 0888.91.56.96. Email: <a href="mailto:myenglish@vnpt.vn">myenglish@vnpt.vn</a></p>
+					<p>Dịch vụ cung cấp thử nghiệm.</p>
+				</div>
+			</div>
+
+			<div class="copyright pull-right">
+				<p>
+					<a href="http://vnptmedia.vn" target="_blank" title="Dịch vụ MyEnglish"><span class="logo logo-me"></span></a>
+					<a href="http://vnptmedia.vn" target="_blank" title="Dịch vụ MyHomework"><span class="logo logo-mh"></span></a>
+				</p>
+				<p>
+					<a href="http://vnptmedia.vn" target="_blank" title="Tập đoàn VNPT"><span class="logo logo-vnptmedia"></span></a>
+					<a href="http://vnptmedia.vn" target="_blank" title="Tổng công ty Truyền thông"><span class="logo logo-vnpt"></span></a>
+				</p>
+			</div>
+		</div>
+		</div>
+	</footer>
+
+	<!-- Modal - BEGIN -->
+	<div class="modal fade" id="modal-video" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">GoLive!</h4>
+				</div>
+				<div class="modal-body">
+					<video controls x-webkit-airplay="allow" webkit-playsinline="" src="https://cdna.englishcentral.com/promo/demo/golive/golive-vi-20160413093615.mp4" style="width: 640px; height: 360px;"></video>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal - END -->
+
+	<script src="common/jquery/jquery.min.js"></script>
+	<script src="common/bootstrap/bootstrap.min.js"></script>
+	<script src="common/v1/js/main.js"></script>
+</body>
+
+</html>

@@ -315,6 +315,82 @@ $(document).ready(function() {
 		}
 	});
 
+	$('#form-change-password').submit(function(e) {
+		var passwd = $('input#password-current');
+		var passwd_new = $('input#password-new');
+		var passwd_new_retype = $('input#password-new-retype');
+
+		var hasSuccess = true;
+
+		if (!passwd.val()) {
+			passwd.closest('div.form-group')
+				.removeClass('has-success')
+				.addClass('has-error');
+			hasSuccess = false;
+
+			passwd.next('span.help-block').html('Yêu cầu nhập mật khẩu hiện tại.');
+		}
+		else {
+			passwd.closest('div.form-group')
+				.removeClass('has-error')
+				.addClass('has-success');
+
+			passwd.next('span.help-block').html('');
+		}
+
+		if (!passwd_new.val()) {
+			passwd_new.closest('div.form-group')
+				.removeClass('has-success')
+				.addClass('has-error');
+			hasSuccess = false;
+
+			passwd_new.next('span.help-block').html('Yêu cầu nhập mật khẩu mới.');
+		}
+		else if (!isPassword(passwd_new.val())) {
+			passwd_new.closest('div.form-group')
+				.removeClass('has-success')
+				.addClass('has-error');
+			hasSuccess = false;
+
+			passwd_new.next('span.help-block').html('Mật khẩu mới yêu cầu ít nhất 8 ký tự, chứa 1 ký tự hoa, 1 ký tự thường và 1 chữ số.');
+		}
+		else {
+			passwd_new.closest('div.form-group')
+				.removeClass('has-error')
+				.addClass('has-success');
+
+			passwd_new.next('span.help-block').html('');
+		}
+
+		if (!passwd_new_retype.val()) {
+			passwd_new_retype.closest('div.form-group')
+				.removeClass('has-success')
+				.addClass('has-error');
+			hasSuccess = false;
+
+			passwd_new_retype.next('span.help-block').html('Yêu cầu gõ lại mật khẩu.');
+		}
+		else if (passwd_new_retype.val() != passwd.val()) {
+			passwd_new_retype.closest('div.form-group')
+				.removeClass('has-success')
+				.addClass('has-error');
+			hasSuccess = false;
+
+			passwd_new_retype.next('span.help-block').html('Mật khẩu gõ lại chưa giống với mật khẩu mới.');
+		}
+		else {
+			passwd_new_retype.closest('div.form-group')
+				.removeClass('has-error')
+				.addClass('has-success');
+
+			passwd_new_retype.next('span.help-block').html('');
+		}
+
+		if (!hasSuccess) {
+			e.preventDefault();
+		}
+	});
+
 	$('div.ng-isolate-scope').on({
 		'mouseenter': function(e) {
 			$(this).children('img.step-video-preview').addClass('hide');
