@@ -390,6 +390,7 @@ footer {
 	color: #09f;
 }
 
-.birthday .form-control {
-	width: 30%;
+.form-group .name .col-sm-6 {
+	padding-right: 0;
+	padding-left: 0;
 }

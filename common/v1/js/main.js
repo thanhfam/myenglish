@@ -1,5 +1,7 @@
 $(document).ready(function() {
 	$('#form-register-email').submit(function(e) {
+		var firstname = $('input#firstname');
+		var lastname = $('input#lastname');
 		var email = $('input#email');
 		var mobile = $('input#mobile');
 		var passwd = $('input#password');
@@ -7,6 +9,38 @@ $(document).ready(function() {
 		var term = $('input#term-email');
 
 		var hasSuccess = true;
+
+		if (!firstname.val()) {
+			firstname.closest('div.form-group')
+				.removeClass('has-success')
+				.addClass('has-error');
+			hasSuccess = false;
+
+			firstname.next('span.help-block').html('Yêu cầu nhập tên.');
+		}
+		else {
+			firstname.closest('div.form-group')
+				.removeClass('has-error')
+				.addClass('has-success');
+
+			firstname.next('span.help-block').html('');
+		}
+
+		if (!lastname.val()) {
+			lastname.closest('div.form-group')
+				.removeClass('has-success')
+				.addClass('has-error');
+			hasSuccess = false;
+
+			lastname.next('span.help-block').html('Yêu cầu nhập họ, đệm.');
+		}
+		else {
+			lastname.closest('div.form-group')
+				.removeClass('has-error')
+				.addClass('has-success');
+
+			lastname.next('span.help-block').html('');
+		}
 
 		if (!email.val()) {
 			email.closest('div.form-group')
