@@ -394,3 +394,20 @@ footer {
 	padding-right: 0;
 	padding-left: 0;
 }
+
+.sharebox {
+	border-width: 1px 0 1px 0;
+	border-color: #eee;
+	border-style: solid;
+	padding: 15px 0 12px;
+	margin: 15px 0;
+}
+
+.read-more {
+	padding-left: 15px;
+	margin: 10px 0;
+}
+
+.read-more a {
+	color: #333;
+}

@@ -491,7 +491,6 @@ $(document).ready(function() {
 
 	// difficulty button group
 	$('#lst-group-view li a').on('click', function(e) {
-		alert(0);
 		return;
 		if ($(this).hasClass('active')) {
 			return false;
