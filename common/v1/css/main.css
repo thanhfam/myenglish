@@ -215,7 +215,6 @@ h1.heading, h2.heading, h3.heading, h4.heading, h5.heading, h6.heading {
 	vertical-align: middle;
 }
 
-
 #faq blockquote {
 	margin: 10px 0;
 	font-size: 12pt;
@@ -233,6 +232,21 @@ h1.heading, h2.heading, h3.heading, h4.heading, h5.heading, h6.heading {
 }
 
 #courses .tab-content {
+}
+
+.course-list .course-avatar {
+	width: 95px;
+	height: 95px;
+	max-width: initial;
+}
+
+.course-list .thumbnail {
+	margin-bottom: 5px;
+}
+
+.course-list .media {
+	margin-top: 0;
+	margin-bottom: 15px;
 }
 
 .video-list .video-avatar {
@@ -274,6 +288,7 @@ h1.heading, h2.heading, h3.heading, h4.heading, h5.heading, h6.heading {
 	border-radius: 3px;
 }
 
+.course-list .course-details .level span,
 .video-list .video-details .level span {
 	vertical-align: middle;
 }
@@ -303,6 +318,10 @@ h1.heading, h2.heading, h3.heading, h4.heading, h5.heading, h6.heading {
 	width: 100%;
 	height: 100%;
 	visibility: hidden;
+}
+
+.video-list .views {
+	margin-left: 40px;
 }
 
 .list-group-item {
