@@ -72,15 +72,15 @@
 
 			<div class="col-sm-3">
 				<div id="account-info">
-					<h2 class="heading">haithanh@vnpt.vn</h2>
+					<h2 class="heading">Thanh Phạm</h2>
 					<p class="acc acc-lv0">Miễn phí</p>
 					<p class="acc acc-lv1 hide">Premium</p>
 					<p class="acc acc-lv2 hide">Platinium</p>
 				</div>
 
 				<div id="lst-account-menu" class="list-group">
-					<a href="taikhoan-1.html" class="list-group-item">Thông tin tài khoản</a>
-					<a href="taikhoan-2.html" class="list-group-item active">Đổi mật khẩu</a>
+					<a href="taikhoan-1.html" class="list-group-item active">Thông tin tài khoản</a>
+					<a href="taikhoan-2.html" class="list-group-item">Đổi mật khẩu</a>
 					<a href="taikhoan-3.html" class="list-group-item">Gói cước</a>
 					<a href="taikhoan-4.html" class="list-group-item">Lịch sử giao dịch</a>
 					<a href="#" class="list-group-item">Thoát</a>
@@ -90,8 +90,7 @@
 			<div class="col-sm-9">
 				<h3 class="heading">Gói cước</h2>
 
-				<div class="alert alert-warning alert-dismissable">
-					<strong>Thông báo:</strong> Bạn đã yêu cầu huỷ gói cước. Chúng tôi sẽ kiểm tra và phản hồi yêu cầu của bạn. Nếu thay đổi, bạn có thể xoá yêu cầu huỷ bất kỳ lúc nào.
+				<div class="alert alert-warning alert-dismissable hide">
 					<a href="#" class="close" data-dismiss="alert" aria-label="Đóng">&times;</a>
 				</div>
 
@@ -102,7 +101,6 @@
 						<th>Ngày bắt đầu</th>
 						<th>Ngày kết thúc</th>
 						<th>Trạng thái</th>
-						<th></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -110,18 +108,14 @@
 						<td>Premium</td>
 						<td>11:18 17/04/2017</td>
 						<td>11:18 17/04/2017</td>
-						<td>Kích hoạt</td>
-						<td><button class="btn btn-sm btn-danger">Yêu cầu huỷ</button></td>
-					</tr>
-					<tr>
-						<td>Premium</td>
-						<td>11:18 17/04/2017</td>
-						<td>11:18 17/04/2017</td>
-						<td>Chờ huỷ</td>
-						<td><button class="btn btn-sm btn-danger">Xoá yêu cầu huỷ</button></td>
+						<td>Đang hoạt động</td>
 					</tr>
 				</tbody>
 				</table>
+
+				<a class="btn btn-sm btn-primary" href="nangcap-1.html">Nâng cấp</a>
+				<!-- Không hiện nút này nếu gói cước hiện tại đã là Platinum -->
+
 			</div>
 		</div>
 	</div>
