@@ -110,16 +110,16 @@
 			<div class="col-sm-3">
 				<div id="btn-group-content-type" class="btn-group btn-group-justified" role="group" aria-label="">
 					<div class="btn-group">
-						<a class="btn btn-default" href="#tab-video-list" aria-controls="tab-video-list" role="tab" data-toggle="tab">Video</a>
+						<a class="btn btn-default active" href="#tab-video-list" aria-controls="tab-video-list" role="tab" data-toggle="tab">Video</a>
 					</div>
 					<div class="btn-group">
-						<a class="btn btn-default active" href="#tab-course-list" aria-controls="tab-course-list" role="tab" data-toggle="tab">Khoá học</a>
+						<a class="btn btn-default" href="#tab-course-list" aria-controls="tab-course-list" role="tab" data-toggle="tab">Khoá học</a>
 					</div>
 				</div>
 
 				<h3 class="heading">Chủ đề</h3>
 				<ul id="lst-group-topic" class="list-group">
-					<li class="list-group-item">Tiếng Anh trẻ em</li>
+					<li class="list-group-item">Tiếng Anh mẫu giáo</li>
 					<li class="list-group-item dropdown"><span class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tiếng Anh tiểu học<span class="caret"></span></span>
 						<ul class="dropdown-menu">
 							<li><a href="#">Tiếng Anh lớp 1</a></li>
@@ -129,7 +129,7 @@
 							<li><a href="#">Tiếng Anh lớp 5</a></li>
 						</ul>
 					</li>
-					<li class="list-group-item dropdown"><span class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tiếng Anh phổ thông<span class="caret"></span></span>
+					<li class="list-group-item dropdown"><span class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tiếng Anh trung học<span class="caret"></span></span>
 						<ul class="dropdown-menu">
 							<li><a href="#">Tiếng Anh lớp 6</a></li>
 							<li><a href="#">Tiếng Anh lớp 7</a></li>
@@ -142,19 +142,13 @@
 					</li>
 					<li class="list-group-item dropdown"><span class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tiếng Anh chuyên ngành<span class="caret"></span></span>
 						<ul class="dropdown-menu">
-							<li><a href="#">Nông nghiệp</a></li>
 							<li><a href="#">Nghệ thuật và thiết kế</a></li>
 							<li><a href="#">Giáo dục</a></li>
-							<li><a href="#">Năng lượng (Dầu khí & ga)</a></li>
 							<li><a href="#">Kĩ thuật</a></li>
-							<li><a href="#">Môi trường</a></li>
 							<li><a href="#">Tài chính</a></li>
 							<li><a href="#">Chăm sóc sức khoẻ</a></li>
 							<li><a href="#">Nhà hàng khách sạn</a></li>
 							<li><a href="#">Luật</a></li>
-							<li><a href="#">Logistics</a></li>
-							<li><a href="#">Sản xuất</a></li>
-							<li><a href="#">Y khoa</a></li>
 							<li><a href="#">Thư ký</a></li>
 							<li><a href="#">Dịch vụ</a></li>
 							<li><a href="#">Công nghệ</a></li>
@@ -163,21 +157,11 @@
 					</li>
 					<li class="list-group-item">Tiếng Anh doanh nghiệp</li>
 					<li class="list-group-item">Tiếng anh học thuật</li>
-					<li class="list-group-item dropdown"><span class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Luyện thi TOEIC, TOEFL, IELTS<span class="caret"></span></span>
-						<ul class="dropdown-menu">
-							<li><a href="#">TOEIC</a></li>
-							<li><a href="#">TOEFL</a></li>
-							<li><a href="#">IELTS</a></li>
-						</ul>
-					</li>
 					<li class="list-group-item dropdown"><span class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tiếng Anh tổng quát<span class="caret"></span></span>
 						<ul class="dropdown-menu">
 							<li><a href="#">Cuộc sống thường ngày</a></li>
 							<li><a href="#">Các bài phát biểu nổi tiếng</a></li>
-							<li><a href="#">Các chủ đề toàn cầu</a></li>
-							<li><a href="#">Ngôn ngữ học</a></li>
 							<li><a href="#">Truyền thông</a></li>
-							<li><a href="#">Điện ảnh</a></li>
 							<li><a href="#">Tin tức</a></li>
 							<li><a href="#">Du lịch</a></li>
 						</ul>
@@ -185,6 +169,7 @@
 				</ul>
 				<h3 class="heading">Kỹ năng</h3>
 				<ul id="lst-group-skill" class="list-group">
+					<li class="list-group-item">Luyện thi TOEIC, TOEFL</li>
 					<li class="list-group-item">Ngữ pháp</li>
 					<li class="list-group-item">Phát âm</li>
 					<li class="list-group-item">Giao tiếp</li>
@@ -226,7 +211,7 @@
 
 				<div class="tab-content">
 					<!-- tab course list - BEGIN -->
-					<div role="tabpanel" class="tab-pane active" id="tab-course-list">
+					<div role="tabpanel" class="tab-pane" id="tab-course-list">
 						<div id="course-list" class="course-list carousel slide" data-ride="carousel" data-interval="false">
 							<!-- Controls -->
 							<div class="carousel-controls clearfix">
@@ -382,7 +367,7 @@
 					<!-- tab course list - END -->
 
 					<!-- tab video list - BEGIN -->
-					<div role="tabpanel" class="tab-pane" id="tab-video-list">
+					<div role="tabpanel" class="tab-pane active" id="tab-video-list">
 						<div id="video-list" class="video-list carousel slide" data-ride="carousel" data-interval="false">
 							<!-- Controls -->
 							<div class="carousel-controls clearfix">
