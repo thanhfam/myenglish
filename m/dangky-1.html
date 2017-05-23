@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Đăng ký tài khoản - MyEnglish</title>
+
+	<link rel="stylesheet" href="../common/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" media="screen" href="../common/v1/css/main.css">
+	<link rel="icon" href="../common/v1/img/favicon.png">
+</head>
+
+<body>
+
+	<div class="m container">
+	<div class="page-header text-center">
+		<div class="logo"><img src="../common/v1/img/me_icon.png"></div>
+		<h2 class="heading">Đăng ký tài khoản</h1>
+	</div>
+
+	<form class="form-horizontal">
+	<div class="form-group">
+		<label for="email" class="col-sm-3 control-label">Với</label>
+		<div class="col-sm-9">
+		<ul class="nav nav-pills">
+			<li role="presentation" class="active"><a href="#tab-email" aria-controls="tab-email" role="tab" data-toggle="tab">Email</a></li>
+			<li role="presentation"><a href="#tab-fb" aria-controls="tab-fb" role="tab" data-toggle="tab">Facebook</a></li>
+			<li role="presentation"><a href="#tab-gg" aria-controls="tab-gg" role="tab" data-toggle="tab">Google</a></li>
+		</ul>
+		</div>
+	</div>
+	</form>
+
+	<hr />
+
+	<div class="tab-content">
+		<!-- tab email - begin -->
+		<div role="tabpanel" class="tab-pane active" id="tab-email">
+			<form id="form-register-email" class="form-horizontal">
+				<div class="form-group">
+					<label for="lastname" class="col-sm-3 control-label">Tên đầy đủ</label>
+					<div class="col-sm-9">
+						<div class="name clearfix">
+							<div class="col-sm-6">
+								<input type="text" class="form-control" id="lastname" placeholder="Họ, đệm" maxlength="255">
+								<span class="help-block"></span>
+							</div>
+							<div class="col-sm-6">
+								<input type="text" class="form-control" id="firstname" placeholder="Tên" 
+								maxlength="255">
+								<span class="help-block"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="email" class="col-sm-3 control-label">Email</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control" id="email" placeholder="" maxlength="255">
+						<span class="help-block"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="mobile" class="col-sm-3 control-label">Số ĐTDĐ</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control" id="mobile" placeholder="" maxlength="255">
+						<span class="help-block"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="password" class="col-sm-3 control-label">Mật khẩu</label>
+					<div class="col-sm-9">
+						<input type="password" class="form-control" id="password" placeholder="" maxlength="255">
+						<span class="help-block"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="password-retype" class="col-sm-3 control-label">Gõ lại mật khẩu</label>
+					<div class="col-sm-9">
+						<input type="password" class="form-control" id="password-retype" placeholder="" maxlength="255">
+						<span class="help-block"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="checkbox col-sm-offset-3 col-sm-9">
+						<label>
+							<input type="checkbox" id="term-email"> Tôi đồng ý với <a href="term.html">Thoả thuận sử dụng</a>
+							<span class="help-block"></span>
+						</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-3 col-sm-9">
+						<button type="submit" class="btn btn-primary">Đăng ký</button>
+						<a href="dangnhap-1.html" class="btn">Đăng nhập nếu đã có tài khoản »</a>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- tab email - end -->
+		<!-- tab facebook - begin -->
+		<div role="tabpanel" class="tab-pane" id="tab-fb">
+			<div class="col-sm-3">
+				<img class="img-responsive img-thumbnail" src="../common/v1/img/fb_icon_96x96.png" />
+			</div>
+			<div class="col-sm-9">
+			<form id="form-register-fb" class="form-horizontal">
+				<div class="form-group">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" id="term-fb"> Tôi đồng ý với <a href="term.html">Thoả thuận sử dụng</a>
+							<span class="help-block"></span>
+						</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary">Đăng ký</button>
+					<a href="dangnhap-1.html" class="btn">Đăng nhập nếu đã có tài khoản »</a>
+					<span class="help-block">Facebook và Google sẽ mở cửa sổ mới để đăng nhập. Hãy mở chế độ pop-ups trong trình duyệt của bạn.</span>
+				</div>
+			</form>
+			</div>
+		</div>
+		<!-- tab facebook - end -->
+		<!-- tab google - begin -->
+		<div role="tabpanel" class="tab-pane" id="tab-gg">
+			<div class="col-sm-3">
+				<img class="img-responsive img-thumbnail" src="../common/v1/img/google_icon_96x96.png" />
+			</div>
+			<div class="col-sm-9">
+			<form id="form-register-gg" class="form-horizontal">
+				<div class="form-group">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" id="term-gg"> Tôi đồng ý với <a href="term.html">Thoả thuận sử dụng</a>
+							<span class="help-block"></span>
+						</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary">Đăng ký</button>
+					<a href="dangnhap-1.html" class="btn">Đăng nhập nếu đã có tài khoản »</a>
+					<span class="help-block">Facebook và Google sẽ mở cửa sổ mới để đăng nhập. Hãy mở chế độ pop-ups trong trình duyệt của bạn.</span>
+				</div>
+			</form>
+			</div>
+		</div>
+		<!-- tab google - end -->
+	</div>
+	</div>
+
+	<script src="../common/jquery/jquery.min.js"></script>
+	<script src="../common/bootstrap/bootstrap.min.js"></script>
+	<script src="../common/v1/js/main.js"></script>
+</body>
+
+</html>
