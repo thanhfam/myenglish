@@ -478,6 +478,12 @@ footer {
 	background-image: url(../img/vnptmedia_icon.png);
 }
 
+.copyright .logo-englishcentral {
+	width: 208px;
+	background-size: 208px 48px;
+	background-image: url(../img/englishcentral-logo.png);
+}
+
 .copyright .logo-vnpt {
 	width: 150px;
 	background-size: 143px 48px;
